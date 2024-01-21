@@ -8,9 +8,7 @@ import profile from "../public/wild-boy.jpeg"
 import code from "../public/code.png";
 import tools from "../public/tools.png";
 import dex from "../public/dex.png";
-import digionline from '../public/digionline.png';
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
+import digionline from "../public/digionline.png";
 
 export default function Home() {
   return (
@@ -49,7 +47,7 @@ export default function Home() {
             <a href="https://www.digi-communications.ro/" target="_blank"><span className="text-cyan-500"> Digi Communications N.V.</span></a> - 7+ years.
           </p>
           <p className="text-md py-2 leading-8">
-            I've gained hands-on experience both in backend, frontend and in blockchain(web3) technologies. 
+            I&apos;ve gained hands-on experience both in backend, frontend and in blockchain(web3) technologies. 
           </p>
         </div>
         <div className="md:flex gap-40">
