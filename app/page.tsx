@@ -29,14 +29,14 @@ export default function Home() {
         <div className="p-8 text-center">
           <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">G. Raul-Dorian</h2>
           <h3 className="text-2xl py-2 md:text-3xl">Fullstack & blockchain developer</h3>
-          <p className="text-md pt-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto">Professional providing services for web2 and web3 creations. Join me below and let's build together!</p>
+          <p className="text-md pt-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto">Professional providing services for web2 and web3 creations. Join me below and let&apos;s build together!</p>
         </div>
         <div className="text-5xl text-gray-600 flex justify-center gap-16">
           <AiFillLinkedin />
           <AiFillTwitterCircle /> 
         </div>
         <div className="relative rounded-full w-80 h-80 mt-10 mx-auto md:h-96 md:w-96">
-          <Image src={profile} layout="fill" objectFit="cover" alt=""/>
+          <Image src={profile} objectFit="cover" alt=""/>
         </div>
       </section>
       <section>
@@ -78,7 +78,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-4 lg:flex-row flex-wrap">
             <div className="basis-1/3 flex-1">
                 <a href="https://decentralized-exchange.vercel.app" target="_blank">
-                  <Image className="rounded-lg object-cover" src={dex} alt="" layout="responsive"></Image>
+                  <Image className="rounded-lg object-cover" src={dex} alt=""></Image>
                 </a>
                 <a href="https://decentralized-exchange.vercel.app" target="_blank">
                   <h2 className="py-4 text-lg text-purple-600 text-center">PirateBit - DEX</h2>
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
                 <a href="https://www.digionline.ro/" target="_blank">
-                  <Image className="rounded-lg object-cover" src={digionline} alt="" layout="responsive"></Image>
+                  <Image className="rounded-lg object-cover" src={digionline} alt=""></Image>
                 </a>
                 <a href="https://www.digionline.ro/" target="_blank">
                   <h2 className="py-4 text-lg text-purple-600 text-center">Digionline - video streaming service</h2>
