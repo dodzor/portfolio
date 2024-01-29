@@ -35,8 +35,8 @@ export default function Home() {
             <p className="text-md pt-5 leading-8 text-gray-800 dark:text-white md:text-lg max-w-xl mx-auto">Professional providing services for web2 and web3 creations. Join me below and let&apos;s build together!</p>
           </div>
           <div className="text-5xl text-gray-600 dark:text-gray-400 flex justify-center gap-16">
-            <AiFillLinkedin />
-            <AiFillTwitterCircle /> 
+            <a target="_blank" href="https://www.linkedin.com/in/g-raul-dorian"><AiFillLinkedin /></a>
+            <a target="_blank" href="https://twitter.com/rauldorian_dev"><AiFillTwitterCircle /></a> 
           </div>
           <div className="relative rounded-full w-80 h-80 mt-10 mx-auto md:h-96 md:w-96">
             <Image src={profile} objectFit="cover" alt=""/>
