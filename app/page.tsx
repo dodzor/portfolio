@@ -6,7 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin
 } from "react-icons/ai";
-import profile from "../public/profile/IMG_2597.jpg";
+import profile from "../public/profile/IMG_2597.jpeg";
 import code from "../public/code.png";
 import tools from "../public/tools.png";
 import dex from "../public/dex.png";
