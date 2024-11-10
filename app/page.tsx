@@ -6,7 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin
 } from "react-icons/ai";
-import profile from "../public/wild-boy.jpeg"
+import profile from "../public/profile/IMG_2597.jpg";
 import code from "../public/code.png";
 import tools from "../public/tools.png";
 import dex from "../public/dex.png";
@@ -18,13 +18,13 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40">
-        <section className="min-h-screen">
+        <section>
           <nav className="py-8 mb-8 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">developedbydorian</h1>
             <ul className="flex items-center">
               <li className="cursor-pointer text-xl dark:text-white" onClick={()=> toggleDarkMode(!darkMode)}><BsMoonStarsFill/></li>
               <li>
-                <a href="https://drive.google.com/file/d/19Bs7HbWWX4__Bwk_rvo7yAaI9F8HZEiy/view" target="_blank"
+                <a href="https://drive.google.com/file/d/1g62Elh9p_e9uS5ZYTqnhg0SSCDOEBdMm/view" target="_blank"
                   className="bg-gradient-to-r from-purple-600 to-yellow-500 text-white px-4 py-2 ml-4 rounded-md">Resume</a>
               </li>
             </ul>
@@ -38,24 +38,25 @@ export default function Home() {
             <a target="_blank" href="https://www.linkedin.com/in/g-raul-dorian"><AiFillLinkedin /></a>
             <a target="_blank" href="https://twitter.com/rauldorian_dev"><AiFillTwitterCircle /></a> 
           </div>
-          <div className="relative rounded-full w-80 h-80 mt-10 mx-auto md:h-96 md:w-96">
-            <Image src={profile} objectFit="cover" alt=""/>
+          {/* <div className="relative rounded-full overflow-hidden mt-10 mx-auto w-[160px] h-[160px] sm:w-[300px] sm:h-[300px] md:h-[400px] md:w-[400px] lg:w-[500px] lg:h-[500px]"> */}
+          <div className="relative overflow-hidden rounded-full mx-auto mt-10" >
+            <Image className="mx-auto rounded-full overflow-hidden" width={500} height={500} src={profile} objectFit="cover" alt=""/>
           </div>
         </section>
         <section>
-          <div className="md:pt-20">
+          <div className="text-center mt-10">
             <h3 className="text-3xl pb-4 text-center">Work experience</h3>
             <p className="text-md py-2 leading-8 dark:text-white">
               Worked both for a tech startup - 
               <a href="http://bitnova.ro/" target="_blank"><span className="text-cyan-500 dark:text-cyan-400"> Bitnova</span></a> - 2 years 
               and a multinational company - 
-              <a href="https://www.digi-communications.ro/" target="_blank"><span className="text-cyan-500 dark:text-cyan-400"> Digi Communications N.V.</span></a> - 7+ years.
+              <a href="https://www.digi-communications.ro/" target="_blank"><span className="text-cyan-500 dark:text-cyan-400"> Digi Communications N.V.</span></a> - 8+ years.
             </p>
             <p className="text-md py-2 leading-8 dark:text-white">
               I&apos;ve gained hands-on experience both in backend, frontend and in blockchain(web3) technologies. 
             </p>
           </div>
-          <div className="md:flex gap-40">
+          <div className="md:flex gap-40 justify-center">
             <div className="text-center shadow-lg p-10 rounded md:px-20">
               <Image src={code} className="mx-auto" width={100} height={100} alt="Code"></Image>
               <h3 className="py-2 text-teal-600 dark:text-teal-400">Languages that I speak</h3>
@@ -67,14 +68,15 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded md:px-20">
               <Image src={tools} className="mx-auto" width={100} height={100} alt="Tools"></Image>
               <h3 className="py-2 text-teal-600 dark:text-teal-400">Tools that I use</h3>
-              <p className="text-gray-800 py-1 dark:text-white">Zend/Laminas</p>
+              <p className="text-gray-800 py-1 dark:text-white">Symfony</p>
               <p className="text-gray-800 py-1 dark:text-white">React</p>
+              <p className="text-gray-800 py-1 dark:text-white">Tailwind</p>
               <p className="text-gray-800 py-1 dark:text-white">Hardhat</p>
             </div>
           </div>
         </section>
         <section>
-          <div className="pt-20">
+          <div className="pt-20 text-center">
             <div>
               <h3 className="text-3xl py-2 text-center dark:text-white">Portfolio</h3>
             </div>
@@ -88,10 +90,10 @@ export default function Home() {
                   </a>
               </div>
               <div className="basis-1/3 flex-1">
-                  <a href="https://www.digionline.ro/" target="_blank">
+                  <a href="https://www.digionline.ro" target="_blank">
                     <Image className="rounded-lg object-cover" src={digionline} alt=""></Image>
                   </a>
-                  <a href="https://www.digionline.ro/" target="_blank">
+                  <a href="https://www.digionline.ro" target="_blank">
                     <h2 className="py-4 text-lg text-purple-600 dark:text-purple-400 text-center">Digionline - video streaming service</h2>
                   </a>
               </div>
