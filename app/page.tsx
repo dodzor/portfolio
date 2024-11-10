@@ -6,7 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin
 } from "react-icons/ai";
-import profile from "../public/profile/IMG_2597.jpeg";
+import profile from "../public/profile/IMG_2607.jpeg";
 import code from "../public/code.png";
 import tools from "../public/tools.png";
 import dex from "../public/dex.png";
@@ -29,19 +29,22 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="relative mt-10" >
+            <Image className="mx-auto rounded-xl overflow-hidden" width={250} height={250} src={profile} objectFit="cover" alt=""/>
+          </div>
+          {/* <div className="relative overflow-hidden rounded-full mx-auto mt-10 md:ml-40 lg:ml-60">
+            <Image className="rounded-full overflow-hidden" width={250} height={250} src={profile} objectFit="cover" alt=""/>
+          </div> */}
           <div className="p-8 text-center">
-            <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 font-medium md:text-6xl">G. Raul-Dorian</h2>
+            <h2 className="text-5xl py-2 text-black dark:text-teal-400 font-small md:text-5xl">Raul D. Ghergic</h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Fullstack & blockchain developer</h3>
-            <p className="text-md pt-5 leading-8 text-gray-800 dark:text-white md:text-lg max-w-xl mx-auto">Professional providing services for web2 and web3 creations. Join me below and let&apos;s build together!</p>
+            <p className="text-md pt-5 leading-8 text-gray-800 dark:text-white md:text-2xl max-w-xl mx-auto">Professional providing services for web2 and web3 creations. Join me below and let&apos;s build together!</p>
           </div>
           <div className="text-5xl text-gray-600 dark:text-gray-400 flex justify-center gap-16">
             <a target="_blank" href="https://www.linkedin.com/in/g-raul-dorian"><AiFillLinkedin /></a>
             <a target="_blank" href="https://twitter.com/rauldorian_dev"><AiFillTwitterCircle /></a> 
           </div>
           {/* <div className="relative rounded-full overflow-hidden mt-10 mx-auto w-[160px] h-[160px] sm:w-[300px] sm:h-[300px] md:h-[400px] md:w-[400px] lg:w-[500px] lg:h-[500px]"> */}
-          <div className="relative overflow-hidden rounded-full mx-auto mt-10" >
-            <Image className="mx-auto rounded-full overflow-hidden" width={500} height={500} src={profile} objectFit="cover" alt=""/>
-          </div>
         </section>
         <section>
           <div className="text-center mt-10">
